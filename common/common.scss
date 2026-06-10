@@ -87,9 +87,12 @@
 }
 
 // ユーザーカードの .metadata は flex-wrap の行コンテナのため、
-// 「最終投稿/参加」の隣に流し込まれないよう独立した行として全幅を取る。
-.user-card .metadata .rep-novel-card {
+// 「最終投稿/参加」の隣に流し込まれないようラッパー行で全幅を取る。
+// カード本体（max-width: 320px）に直接 flex-basis を指定しても
+// max-width が flex の配置計算サイズを縮めるため同じ行に収まってしまう。
+.rep-novel-card-row {
   flex-basis: 100%;
+  min-width: 0;
 }
 
 // NoveLand の Discourse には代表作関連の user field しか定義しないため一括非表示で良い。

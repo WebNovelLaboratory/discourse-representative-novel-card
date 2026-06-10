@@ -45,18 +45,20 @@ export default apiInitializer("1.0", (api) => {
     <template>
       {{#let (repNovel @outletArgs.user) as |novel|}}
         {{#if novel}}
-          <a class="rep-novel-card" href={{novel.url}} target={{novel.target}} rel={{novel.rel}}>
-            {{#if novel.cover}}
-              <img class="rep-novel-card__cover" src={{novel.cover}} alt="" loading="lazy" />
-            {{/if}}
-            <span class="rep-novel-card__body">
-              <span class="rep-novel-card__label">{{i18n (themePrefix "rep_novel_card.label")}}</span>
-              <span class="rep-novel-card__title">{{novel.title}}</span>
-              {{#if novel.synopsis}}
-                <span class="rep-novel-card__synopsis">{{novel.synopsis}}</span>
+          <div class="rep-novel-card-row">
+            <a class="rep-novel-card" href={{novel.url}} target={{novel.target}} rel={{novel.rel}}>
+              {{#if novel.cover}}
+                <img class="rep-novel-card__cover" src={{novel.cover}} alt="" loading="lazy" />
               {{/if}}
-            </span>
-          </a>
+              <span class="rep-novel-card__body">
+                <span class="rep-novel-card__label">{{i18n (themePrefix "rep_novel_card.label")}}</span>
+                <span class="rep-novel-card__title">{{novel.title}}</span>
+                {{#if novel.synopsis}}
+                  <span class="rep-novel-card__synopsis">{{novel.synopsis}}</span>
+                {{/if}}
+              </span>
+            </a>
+          </div>
         {{/if}}
       {{/let}}
     </template>
@@ -67,18 +69,20 @@ export default apiInitializer("1.0", (api) => {
     <template>
       {{#let (repNovel @outletArgs.model) as |novel|}}
         {{#if novel}}
-          <a class="rep-novel-card rep-novel-card--profile" href={{novel.url}} target={{novel.target}} rel={{novel.rel}}>
-            {{#if novel.cover}}
-              <img class="rep-novel-card__cover" src={{novel.cover}} alt="" loading="lazy" />
-            {{/if}}
-            <span class="rep-novel-card__body">
-              <span class="rep-novel-card__label">{{i18n (themePrefix "rep_novel_card.label")}}</span>
-              <span class="rep-novel-card__title">{{novel.title}}</span>
-              {{#if novel.synopsis}}
-                <span class="rep-novel-card__synopsis">{{novel.synopsis}}</span>
+          <div class="rep-novel-card-row">
+            <a class="rep-novel-card rep-novel-card--profile" href={{novel.url}} target={{novel.target}} rel={{novel.rel}}>
+              {{#if novel.cover}}
+                <img class="rep-novel-card__cover" src={{novel.cover}} alt="" loading="lazy" />
               {{/if}}
-            </span>
-          </a>
+              <span class="rep-novel-card__body">
+                <span class="rep-novel-card__label">{{i18n (themePrefix "rep_novel_card.label")}}</span>
+                <span class="rep-novel-card__title">{{novel.title}}</span>
+                {{#if novel.synopsis}}
+                  <span class="rep-novel-card__synopsis">{{novel.synopsis}}</span>
+                {{/if}}
+              </span>
+            </a>
+          </div>
         {{/if}}
       {{/let}}
     </template>
