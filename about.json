@@ -1,0 +1,8 @@
+{
+  "name": "NoveLand Representative Novel Card",
+  "component": true,
+  "about_url": "https://github.com/WebNovelLaboratory/discourse-representative-novel-card",
+  "license_url": "https://github.com/WebNovelLaboratory/discourse-representative-novel-card/blob/main/LICENSE",
+  "authors": "WebNovelLaboratory",
+  "theme_version": "1.0.0"
+}

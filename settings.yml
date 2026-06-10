@@ -1,0 +1,23 @@
+rep_novel_field_id_title:
+  default: 0
+  type: integer
+  min: 0
+
+rep_novel_field_id_url:
+  default: 0
+  type: integer
+  min: 0
+
+rep_novel_field_id_cover:
+  default: 0
+  type: integer
+  min: 0
+
+rep_novel_field_id_synopsis:
+  default: 0
+  type: integer
+  min: 0
+
+open_link_in_new_tab:
+  default: true
+  type: bool

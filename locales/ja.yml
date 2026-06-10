@@ -1,0 +1,11 @@
+ja:
+  theme_metadata:
+    description: "Discourse のユーザーカードとプロフィールページに、NoveLand の代表作カードを表示します。"
+    settings:
+      rep_novel_field_id_title: "代表作タイトルが入るユーザーフィールド ID。0 の間は表示しません。"
+      rep_novel_field_id_url: "代表作の作品ページ URL が入るユーザーフィールド ID。0 の間は表示しません。"
+      rep_novel_field_id_cover: "代表作の表紙画像 URL が入るユーザーフィールド ID。0 の場合は表紙を表示しません。"
+      rep_novel_field_id_synopsis: "代表作のあらすじが入るユーザーフィールド ID。0 の場合はあらすじを表示しません。"
+      open_link_in_new_tab: "代表作リンクを新しいタブで開きます。"
+  rep_novel_card:
+    label: "代表作"

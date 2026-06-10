@@ -1,0 +1,11 @@
+en:
+  theme_metadata:
+    description: "Displays a user's featured NoveLand novel on Discourse user cards and profile pages."
+    settings:
+      rep_novel_field_id_title: "User field ID containing the featured novel title. Set to 0 to disable rendering until configured."
+      rep_novel_field_id_url: "User field ID containing the featured novel page URL. Set to 0 to disable rendering until configured."
+      rep_novel_field_id_cover: "User field ID containing the featured novel cover image URL. Set to 0 to omit covers."
+      rep_novel_field_id_synopsis: "User field ID containing the featured novel synopsis. Set to 0 to omit synopses."
+      open_link_in_new_tab: "Open featured novel links in a new browser tab."
+  rep_novel_card:
+    label: "Featured Novel"
