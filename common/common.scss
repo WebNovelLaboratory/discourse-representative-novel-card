@@ -3,7 +3,6 @@
   align-items: center;
   gap: 0.75em;
   width: 100%;
-  max-width: 320px;
   margin-top: 0.75em;
   padding: 0.65em;
   border: 1px solid var(--primary-low);
@@ -72,7 +71,6 @@
 
   &--profile {
     align-items: flex-start;
-    max-width: 480px;
     padding: 0.75em;
 
     .rep-novel-card__cover {
@@ -88,8 +86,8 @@
 
 // ユーザーカードの .metadata は flex-wrap の行コンテナのため、
 // 「最終投稿/参加」の隣に流し込まれないようラッパー行で全幅を取る。
-// カード本体（max-width: 320px）に直接 flex-basis を指定しても
-// max-width が flex の配置計算サイズを縮めるため同じ行に収まってしまう。
+// カード本体に直接 flex-basis を指定すると、サイズ制約次第で
+// flex の配置計算サイズが縮み同じ行に収まってしまうことがある。
 .rep-novel-card-row {
   flex-basis: 100%;
   min-width: 0;
